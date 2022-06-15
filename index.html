@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulário.css">
+    <script src="formulário.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de leitores</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+    
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+                
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <br>
+            <button class="botaojs" type="button" onsubmit="" onclick="hehe()">Quantos livros você leu esse ano?</button>
+            
+            
+            <div class="campo">
+                <label><br>Prefere ler no físico ou no digital?</label>
+                <label>
+                    <input type="radio" name="fisicodigital" value="fisico">Físico
+                </label>
+                <label>
+                    <input type="radio" name="fisicodigital" value="digital">Digital
+                </label>
+                <label>
+                    <input type="radio" name="fisicodigital" value="indiferente" checked>Indiferente
+                </label>
+            </div>
+
+            <div class="campo">
+                <label>Qual o seu ritmo de leitura?</label>
+                <select id="ritmodeleitura">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Baixo</option>
+                    <option>Baixo-médio</option>
+                    <option>Médio</option>
+                    <option>Médio-alto</option>
+                    <option>Alto</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label>Selecione os tipos de livros que mais gosta: <br></label>
+                    <input type="checkbox" id="clássicos" name="clássicos" value="clássicos">
+                    <label for="clássicos">Clássicos</label>
+                    <input type="checkbox" id="fantasia" name="fantasia" value="fantasia">
+                    <label for="fantasia">Fantasia</label>
+                    <input type="checkbox" id="poema" name="peomas" value="poemas">
+                    <label for="poemas">Poemas</label>
+                    <input type="checkbox" id="denúncia" name="denúncia" value="denúncia">
+                    <label for="denúncia">Denúncia social</label>
+                    <input type="checkbox" id="espirituais" name="espirituais" value="espirituais">
+                    <label for="espirituais">Sobre espiritualidade</label>
+                    <input type="checkbox" id="técnico" name="técnico" value="técnico">
+                    <label for="técnico">Técnicos</label>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <br>
+                <label>Conte um pouco da sua experência com a leitura:</label>
+                <textarea rows="5" style="width: 26em" id="experiência" name="experiência"></textarea>
+            </div>
+
+            <button class="botao" type="submit" onsubmit="" >Concluído</button>
+    </form>
+    
+</body>
+</html>
